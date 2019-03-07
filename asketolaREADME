@@ -1,0 +1,7 @@
+This coding challenge has the following features
+
+1) Features MVVM format separating the fetching work from the view controller, making cleaner, more readable code,
+and leaving space for future expansion
+2) Cell loading code done in the ResultsCell.swift file with image fetched in the background, separating it from the VC
+3) Features fun Color Contrast colors with ratios of 6.49:1 for accessibility for disabled users
+4) Uses UITableViewDataSourcePrefetching extention of tableview, new to iOS10
