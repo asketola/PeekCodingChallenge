@@ -16,7 +16,6 @@ class ViewController: UIViewController {
     
     activitySpinner.hidesWhenStopped = true
         
-    activitySpinner.color = UIColor(red: 0, green: 96, blue: 96, alpha: 1)
     activitySpinner.startAnimating()
         
     resultsTableView.isHidden = true
