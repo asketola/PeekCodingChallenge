@@ -148,13 +148,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		79FFCCB0222CB9AB00D3789C /* Constants */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Constants;
-			sourceTree = "<group>";
-		};
 		79FFCCB5222CF3D400D3789C /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,7 +200,6 @@
 				79FFCCB9222E019E00D3789C /* ViewModel */,
 				79FFCCB8222E018900D3789C /* Controller */,
 				79FFCCB5222CF3D400D3789C /* Model */,
-				79FFCCB0222CB9AB00D3789C /* Constants */,
 				79FFCCAF222CB82600D3789C /* View */,
 				D9A10F9F216C4AFD007998EC /* AppDelegate.swift */,
 				D9A10FA6216C4AFD007998EC /* Assets.xcassets */,
