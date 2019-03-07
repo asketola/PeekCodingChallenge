@@ -1,0 +1,6 @@
+framework module Pods_GithubGraphQLUITests {
+  umbrella header "Pods-GithubGraphQLUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
