@@ -6,7 +6,7 @@ public typealias GraphQLCompletionHandler<Operation: GraphQLOperation> = (Result
 
 /// The base URL for connecting to the Github GraphQL endpoint
 let githubGQL = "https://api.github.com/graphql"
-let githubToken = " c8d9e10f50aecdaf32a03fa0ee40c33dc962211d"
+let githubToken = " 6d62fd6e0eb800799f67ca582224b3204d2f34cd"
 
 /// HTTP method definitions.
 /// See https://tools.ietf.org/html/rfc7231#section-4.3
