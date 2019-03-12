@@ -16,7 +16,3 @@ struct SearchResultModel {
     var avatar : String?
     var stars: Int = 0
 } 
-
-struct testStruct {
-    var stuff : String
-}
