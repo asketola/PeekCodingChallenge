@@ -11,8 +11,8 @@
 		66447F698A2C863913E91896 /* Pods_GithubGraphQL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABCE96A0819665B92683A16A /* Pods_GithubGraphQL.framework */; };
 		7346F51CDA36DE5C51486FCC /* Pods_GithubGraphQLUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 696FECE5EDEC8B0066CC5A95 /* Pods_GithubGraphQLUITests.framework */; };
 		79FFCCAE222CB80800D3789C /* ResultsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FFCCAD222CB80800D3789C /* ResultsCell.swift */; };
-		79FFCCB4222CF2F600D3789C /* SearchResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FFCCB3222CF2F600D3789C /* SearchResultModel.swift */; };
 		79FFCCB7222DE26D00D3789C /* GraphQLSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FFCCB6222DE26D00D3789C /* GraphQLSearchViewModel.swift */; };
+		79FFCCBB22374BC600D3789C /* SearchResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FFCCBA22374BC600D3789C /* SearchResultModel.swift */; };
 		D9A10FA0216C4AFD007998EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A10F9F216C4AFD007998EC /* AppDelegate.swift */; };
 		D9A10FA2216C4AFD007998EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A10FA1216C4AFD007998EC /* ViewController.swift */; };
 		D9A10FA5216C4AFD007998EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9A10FA3216C4AFD007998EC /* Main.storyboard */; };
@@ -56,8 +56,8 @@
 		219D3FB4F2DCC24AE77C8CD7 /* Pods-GithubGraphQLTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubGraphQLTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GithubGraphQLTests/Pods-GithubGraphQLTests.debug.xcconfig"; sourceTree = "<group>"; };
 		696FECE5EDEC8B0066CC5A95 /* Pods_GithubGraphQLUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GithubGraphQLUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79FFCCAD222CB80800D3789C /* ResultsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsCell.swift; sourceTree = "<group>"; };
-		79FFCCB3222CF2F600D3789C /* SearchResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchResultModel.swift; path = "../New Group/SearchResultModel.swift"; sourceTree = "<group>"; };
 		79FFCCB6222DE26D00D3789C /* GraphQLSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLSearchViewModel.swift; sourceTree = "<group>"; };
+		79FFCCBA22374BC600D3789C /* SearchResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultModel.swift; sourceTree = "<group>"; };
 		AB1DCA7D862BEB7D144E7E13 /* Pods-GithubGraphQLTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubGraphQLTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GithubGraphQLTests/Pods-GithubGraphQLTests.release.xcconfig"; sourceTree = "<group>"; };
 		ABCE96A0819665B92683A16A /* Pods_GithubGraphQL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GithubGraphQL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C46721E35993F32712F0753A /* Pods_GithubGraphQLTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GithubGraphQLTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,7 +151,7 @@
 		79FFCCB5222CF3D400D3789C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				79FFCCB3222CF2F600D3789C /* SearchResultModel.swift */,
+				79FFCCBA22374BC600D3789C /* SearchResultModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -502,7 +502,7 @@
 			files = (
 				D9A10FA2216C4AFD007998EC /* ViewController.swift in Sources */,
 				D9A10FE8216C77CD007998EC /* GraphQLManager.swift in Sources */,
-				79FFCCB4222CF2F600D3789C /* SearchResultModel.swift in Sources */,
+				79FFCCBB22374BC600D3789C /* SearchResultModel.swift in Sources */,
 				D9A10FF4216D93B8007998EC /* RepositoriesGraphQLRequest.swift in Sources */,
 				79FFCCB7222DE26D00D3789C /* GraphQLSearchViewModel.swift in Sources */,
 				D9A10FEA216C77CD007998EC /* GraphQLAuthHTTPNetworkTransport.swift in Sources */,

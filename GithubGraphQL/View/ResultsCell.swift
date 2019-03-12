@@ -49,8 +49,8 @@ class ResultsCell: UITableViewCell {
                 let starCountString = String(starCount)
                 starsLabel?.text = starCountString + "⭐️"
             }
-            if searchGQLDataResult.avatar != nil {
-                let imageUrl = searchGQLDataResult.avatar!
+            if searchGQLDataResult.avatar.count > 0 {
+                let imageUrl = searchGQLDataResult.avatar
                 DispatchQueue.global().async {
                     if let data = try? Data(contentsOf: URL(string: imageUrl)!) {
                         DispatchQueue.main.async {

@@ -51,8 +51,7 @@ extension ViewController: UITableViewDataSource {
 
 extension ViewController: UITableViewDataSourcePrefetching {
     func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
-        let indexPathsForVisibleRows = resultsTableView.indexPathsForVisibleRows
-        if (indexPathsForVisibleRows?.contains(where: isLoadingCell))! {
+        if indexPaths.contains(where: isLoadingCell) {
             viewModel.fetchGraphQLData()
         }
     }
