@@ -11,7 +11,6 @@ import UIKit
 
 class ResultsCell: UITableViewCell {
 
-
     @IBOutlet weak var avatarImage: UIImageView!
     @IBOutlet weak var repoTitle: UILabel!
     @IBOutlet weak var authorLabel: UILabel!
@@ -26,10 +25,8 @@ class ResultsCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
         
         spinner.hidesWhenStopped = true
-        spinner.color = UIColor(red: 0, green: 96, blue: 96, alpha: 1)
     }
 
     func configure(with searchGQLDataResult: SearchResultModel?) {

@@ -59,14 +59,12 @@ extension ViewController: UITableViewDataSourcePrefetching {
 
 extension ViewController: GraphQLSearchViewModelDelegate {
     func onFetchCompleted(with newIndexPathsToReload: [IndexPath]?) {
-        guard let newIndexPathsToReload = newIndexPathsToReload else {
+        if newIndexPathsToReload == nil {
             activitySpinner.stopAnimating()
             resultsTableView.isHidden = false
             resultsTableView.reloadData()
             return
         }
-        let indexPathsToReload = visibleIndexPathsToReload(intersecting: newIndexPathsToReload)
-        //resultsTableView.reloadRows(at: indexPathsToReload, with: .automatic)
         resultsTableView.reloadData()
     }
     
@@ -84,11 +82,5 @@ extension ViewController: GraphQLSearchViewModelDelegate {
 private extension ViewController {
     func isLoadingCell(for indexPath: IndexPath) -> Bool {
         return indexPath.row >= viewModel.currentCount 
-    }
-    
-    func visibleIndexPathsToReload(intersecting indexPaths: [IndexPath]) -> [IndexPath] {
-        let indexPathsForVisibleRows = resultsTableView.indexPathsForVisibleRows ?? []
-        let indexPathsIntersection = Set(indexPathsForVisibleRows).intersection(indexPaths)
-        return Array(indexPathsIntersection)
     }
 }
