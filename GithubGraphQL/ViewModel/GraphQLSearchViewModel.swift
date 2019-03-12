@@ -82,7 +82,7 @@ final class GraphQLSearchViewModel {
                         self.currentPage += 1
                         self.isFetchInProgress = false
                         
-                        self.total += self.total + newSearchGQLData.count
+                        self.total += newSearchGQLData.count
                         self.searchGQLDataResults.append(contentsOf: newSearchGQLData)
                         
                         if !self.firstQuery {
